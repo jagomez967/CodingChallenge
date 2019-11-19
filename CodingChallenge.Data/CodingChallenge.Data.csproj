@@ -35,6 +35,12 @@
       <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.TestPlatform.14.0.0.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.TestPlatform.14.0.0.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="Moq, Version=4.5.23.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.5.23\lib\net45\Moq.dll</HintPath>
       <Private>True</Private>
@@ -52,7 +58,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\FormaBuilder.cs" />
     <Compile Include="Classes\FormaGeometrica.cs" />
+    <Compile Include="Classes\Formas\Circulo.cs" />
+    <Compile Include="Classes\Formas\Cuadrado.cs" />
+    <Compile Include="Classes\Formas\EmptyForm.cs" />
+    <Compile Include="Classes\Formas\TrianguloEquilatero.cs" />
+    <Compile Include="Classes\IdiomaBuilder.cs" />
+    <Compile Include="Classes\Idiomas\IdiomaEN.cs" />
+    <Compile Include="Classes\Idiomas\IdiomaES.cs" />
+    <Compile Include="Interfaces\IForma.cs" />
+    <Compile Include="Interfaces\IIdioma.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
