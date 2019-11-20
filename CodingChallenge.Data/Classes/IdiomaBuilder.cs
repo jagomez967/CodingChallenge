@@ -1,5 +1,4 @@
-﻿using CodingChallenge.Data.Classes.Idiomas;
-using CodingChallenge.Data.Interfaces;
+﻿using CodingChallenge.Data.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,15 +9,14 @@ namespace CodingChallenge.Data.Classes
 {
     public class IdiomaBuilder
     {
-        private IIdioma _builder;
-        public IdiomaBuilder() { _builder = new IdiomaEN(); }
-        public IdiomaBuilder(IIdioma idioma)
+        private IIdioma _Idioma;
+        public IdiomaBuilder(IIdioma idioma) 
         {
-            _builder = idioma;            
+            _Idioma = idioma;
         }
         public IIdioma CreateObject()
         {
-            return _builder;
+            return _Idioma;
         }
     }
 }
